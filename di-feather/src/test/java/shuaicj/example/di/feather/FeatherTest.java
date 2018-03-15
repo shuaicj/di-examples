@@ -14,7 +14,7 @@ public class FeatherTest {
         Example1.A a2 = feather.instance(Example1.A.class);
         assertThat(a1).isNotNull();
         assertThat(a2).isNotNull();
-        assertThat(a1).isEqualTo(a2);
+        assertThat(a1).isNotEqualTo(a2);
     }
 
     @Test
