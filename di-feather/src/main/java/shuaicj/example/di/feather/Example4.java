@@ -1,19 +1,13 @@
 package shuaicj.example.di.feather;
 
-import org.codejargon.feather.Provides;
+import javax.inject.Inject;
 
 @SuppressWarnings("unused")
 class Example4 {
 
-    static class Conf {
-        @Provides I i() { return new A(); }
+    static class A {
+        @Inject B b;
     }
 
-    interface I {
-        void nothing();
-    }
-
-    static class A implements I {
-        @Override public void nothing() {}
-    }
+    static class B {}
 }

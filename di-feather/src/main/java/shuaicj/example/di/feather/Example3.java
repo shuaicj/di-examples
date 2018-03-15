@@ -1,10 +1,16 @@
 package shuaicj.example.di.feather;
 
-import javax.inject.Singleton;
+import javax.inject.Inject;
 
 @SuppressWarnings("unused")
 class Example3 {
 
-    @Singleton
-    static class A {}
+    static class A {
+
+        final B b;
+
+        @Inject A(B b) { this.b = b; }
+    }
+
+    static class B {}
 }
