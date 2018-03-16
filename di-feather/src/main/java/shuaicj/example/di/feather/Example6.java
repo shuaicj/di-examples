@@ -19,7 +19,7 @@ class Example6 {
 
         final B b;
 
-        @Inject public A(@Named("b2") B b) { this.b = b; }
+        @Inject A(@Named("b2") B b) { this.b = b; }
     }
 
     static class B {
