@@ -12,6 +12,7 @@
     <modules>
         <module>di-feather</module>
         <module>di-dagger</module>
+        <module>di-guice</module>
     </modules>
 
     <properties>
